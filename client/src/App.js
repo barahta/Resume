@@ -5,10 +5,6 @@ import {observer} from "mobx-react-lite";
 import './assets/styles/index.scss'
 import MainPage from "./pages/MainPage";
 import {DataProvider} from "./context/DataContext";
-import {library} from "@fortawesome/fontawesome-svg-core";
-import {fas} from "@fortawesome/free-solid-svg-icons";
-import {fab} from "@fortawesome/free-brands-svg-icons";
-library.add(fas, fab);
 function App() {
 
   return (
