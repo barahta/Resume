@@ -257,6 +257,16 @@ export default function MainPage() {
                         })}
                     </div>
                 </div>
+                <div className={style.experience_historymob}>
+                    <div className={style.experience_history_left}>
+                        {timeline.map((block, index) => {
+
+                                return <ExperienceBlock key={index} block={block}/>;
+
+                        })}
+                    </div>
+
+                </div>
                 <div className={style.experience_run}><i className="fa-solid fa-person-running"/></div>
             </div>
             <div className={style.portfolio}></div>
@@ -313,9 +323,18 @@ export default function MainPage() {
                     <div className={style.contact_right_title}>Contact</div>
                     <div className={style.contact_right_mail}>barahtasurgut@gmail.com<br/>+7 (982) 552 7 332</div>
                     <div className={style.contact_right_btns}>
-                        <i className="fa-brands fa-vk"/>
-                        <i className="fa-brands fa-telegram"/>
-                        <i className="fa-brands fa-whatsapp"/>
+                        <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+                            <i className="fa-brands fa-vk"/>
+                        </a>
+                        <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+                            <i className="fa-brands fa-telegram"/>
+                        </a>
+                        {/*<a href="https://www.example.com" target="_blank" rel="noopener noreferrer">*/}
+                            <i className="fa-brands fa-whatsapp"/>
+                        {/*</a>*/}
+
+
+
                     </div>
                 </div>
             </div>

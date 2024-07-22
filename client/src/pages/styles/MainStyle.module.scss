@@ -1,638 +1,3416 @@
-.container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  .header{
+@media screen and (min-width: 1800px){
+  .container{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    height: 100px;
-    width: calc(100% - 40px);
-    margin-bottom: 100px;
-    .header_logo{
-      font-weight: 800;
-      font-size: 1.2em;
-    }
-    .header_menu{
-      display: flex;
-      align-items: center;
-      height: 100%;
-      .header_menu_btn{
-        margin-right: 10px;
-        padding: 10px;
-        font-weight: 500;
-        transition: 0.2s;
-        height: 20px;
-      }
-      .header_menu_btn:hover{
-        color: #CCC;
-        border-bottom: 3px solid #CCC;
-        transition: 0.2s;
-        padding-bottom: 10px;
-        cursor: pointer;
-      }
-    }
-  }
-  .mainup{
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 100px;
-    .mainup_stack{
-      display: flex;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      width: calc(50% - 10px);
-      margin-right: 10px;
-      i{
-        font-size: 94pt;
-        margin-right: 30px;
-        cursor: pointer;
-      }
-    }
-    .mainup_vizitka{
-
+    justify-content: flex-start;
+    .header{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: calc(50% - 10px);
-      margin-right: 10px;
-      .mainup_vizitka_left{
-        width: calc(50%);
-        .mainup_vizitka_left_title{
-          font-size: 2.3rem;
-          font-weight: 800;
-
-        }
-        .mainup_vizitka_left_name{
-          font-size: 1.3rem;
-          font-weight: 600;
-        }
-        .mainup_vizitka_left_hello{}
+      height: 100px;
+      width: calc(100% - 40px);
+      margin-bottom: 100px;
+      .header_logo{
+        font-weight: 800;
+        font-size: 1.2em;
       }
-
-      .mainup_vizitka_right{
-        width: 40%;
-        height: 300px;
-        position: relative;
-        .mainup_vizitka_right_photo{
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-          background-position: center;clip-path: polygon(
-                        0% 10%,
-                        0% 100%,
-                        100% 110%,
-                        100% 0%
-        );
+      .header_menu{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        .header_menu_btn{
+          margin-right: 10px;
+          padding: 10px;
+          font-weight: 500;
+          transition: 0.2s;
+          height: 20px;
         }
-        .mainup_vizitka_right_mask{
-          position: absolute;
-          top: 20px;
-          left: 20px;
-          width: 80%;
-          height: 80%;
-          border: 3px solid #454545;
-          background-image: url('https://masterpiecer-images.s3.yandex.net/34e974e177bb11ee9ad5ceda526c50ab:upscaled'); /* Замените на путь к вашей фотографии */background-size: cover;
-          border-radius: 30% 40% 50% 70%;
-          animation: example 22s linear infinite;
-
-        }
-
-
-      }
-      @keyframes example {
-        0% {
-          border-radius: 30% 40% 50% 70%;
-        }
-        10% {
-          border-radius: 60% 50% 60% 40%;
-        }
-        20% {
-          border-radius: 50% 60% 70% 55%;
-        }
-        30% {
-          border-radius: 40% 50% 60% -70%;
-        }
-        40% {
-          border-radius: 70% 50% 80% 50%;
-        }
-        50% {
-          border-radius: 60% 70% 60% 50%;
-        }
-        60% {
-          border-radius: 50% 60% 70% 30%;
-        }
-        70% {
-          border-radius: 40% 50% 60% 70%;
-        }
-        80% {
-          border-radius: 60% 50% 40% 30%;
-        }
-        90% {
-          border-radius: 90% 50% 30% 40%;
-        }
-        100% {
-          border-radius: 30% 40% 50% 70%;
+        .header_menu_btn:hover{
+          color: #CCC;
+          border-bottom: 3px solid #CCC;
+          transition: 0.2s;
+          padding-bottom: 10px;
+          cursor: pointer;
         }
       }
     }
-  }
-
-  .reversesblocks{
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    justify-content: space-between;
-    margin-bottom: 100px;
-    perspective: 1000px; /* Добавляет перспективу для 3D-эффекта */
-
-    div{
-      width: 300px;
-      height: 300px;
-      background-color: #D9D9D9;
-      color: #737373;
+    .mainup{
+      width: 80%;
       display: flex;
-      padding: 20px;
-      font-size: 30pt;
-      margin: 10px;
-      cursor: pointer;
-    }
-
-    .revers_btn_age{
-      justify-content: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
       align-items: center;
-      font-weight: 800;
-      font-size: 4vw;
-      position: relative;
-      transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
-      transition: transform 0.8s;
-      .card_front, .card_back {
-        position: absolute;
-        backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+      margin-bottom: 100px;
+      .mainup_stack{
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: calc(50% - 10px);
+        margin-right: 10px;
+        i{
+          font-size: 94pt;
+          margin-right: 30px;
+          cursor: pointer;
+        }
+      }
+      .mainup_vizitka{
+
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-      }
+        width: calc(50% - 10px);
+        margin-right: 10px;
+        .mainup_vizitka_left{
+          width: calc(50%);
+          .mainup_vizitka_left_title{
+            font-size: 2.3rem;
+            font-weight: 800;
 
-      .card_front {
-
-      }
-
-      .card_back {
-        background: linear-gradient(45deg, #063155, #00AAFF);
-        color: #FFF;
-        transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
-        display: flex;
-        flex-direction: column;
-        div{
-          background-color: rgba(0,0,0,0);
-        }
-        .card_back_up{
-          font-weight: 600;
-          font-size: 1.5vw;
-          line-height: 1;
-          color: #FFF;
-        }
-        .card_back_center{
-          display: none;
-        }
-        .card_back_bottom{
-          font-weight: 800;
-          font-size: 3vw;
-          line-height: 1;
-          color: #FFF;
-        }
-      }
-    }
-    .revers_btn_level{
-      justify-content: center;
-      align-items: center;
-      font-weight: 800;
-      font-size: 4vw;
-      line-height: 0.9;
-      position: relative;
-      transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
-      transition: transform 0.8s;
-      .card_front, .card_back {
-        position: absolute;
-        backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .card_front {
-
-      }
-
-      .card_back {
-        background: linear-gradient(45deg, #55064A, #F652FF);
-        color: #FFF;
-        font-size: 3vw;
-        transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
-      }
-    }
-    .revers_btn_position{
-      justify-content: center;
-      align-items: center;
-      font-weight: 800;
-      font-size: 3vw;
-      line-height: 0.9;
-      position: relative;
-      transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
-      transition: transform 0.8s;
-      .card_front, .card_back {
-        position: absolute;
-        backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .card_front {
-
-      }
-
-      .card_back {
-        background: linear-gradient(45deg, #065506, #59FF00);
-        color: #FFF;
-        transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
-        display: flex;
-        flex-direction: column;
-        div{
-          background-color: rgba(0,0,0,0);
-        }
-        .card_back_up{
-          font-weight: 800;
-          font-size: 3vw;
-          line-height: 1;
-          color: #FFF;
-        }
-        .card_back_center{
-          display: none;
-        }
-        .card_back_bottom{
-          font-weight: 600;
-          font-size: 1.5vw;
-          line-height: 1;
-          color: #FFF;
-        }
-      }
-    }
-    .revers_btn_contact{
-      justify-content: center;
-      align-items: center;
-      font-weight: 800;
-      line-height: 0.9;
-      position: relative;
-      transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
-      transition: transform 0.8s;
-      .card_front, .card_back {
-        position: absolute;
-        backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .card_front {
-
-        font-size: 3vw;
-      }
-
-      .card_back {
-        width: calc(100% - 40px);
-        background: linear-gradient(45deg, #C01600, #FFB89A);
-        color: #FFF;
-        transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
-        display: flex;
-        flex-direction: column;
-        div{
-          background-color: rgba(0,0,0,0);
-        }
-        .card_back_up{}
-        .card_back_center{
-          width: calc(100% - 40px);
-          height: 1px;
-          background-color: #FFF;
-        }
-        .card_back_bottom{
-          font-weight: 600;
-          font-size: 1.5vw;
-          line-height: 1;
-          color: #FFF;
-        }
-      }
-    }
-    .revers_btn_age:hover {
-      transform: rotateY(180deg); /* Поворачивает карточку при наведении */
-    }
-    .revers_btn_level:hover {
-      transform: rotateY(180deg); /* Поворачивает карточку при наведении */
-    }
-    .revers_btn_position:hover {
-      transform: rotateY(180deg); /* Поворачивает карточку при наведении */
-    }
-    .revers_btn_contact:hover {
-      transform: rotateY(180deg); /* Поворачивает карточку при наведении */
-    }
-  }
-
-  .experience{
-  display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 100px;
-    .experience_run{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      //font-size: 30pt;
-      width: 100%;
-      margin-top: 10px;
-      i{
-        font-size: 5vw;
-        color: #CCC;
-      }
-    }
-    .experience_title{
-      font-size: 5vw;
-      margin-bottom: 50px;
-
-    }
-    .experience_history{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      .experience_history__block{
-        display: flex;
-        flex-direction: column;
-        min-height: 250px;
-        max-width: 350px;
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-
-        .experience_history__block_title{
-          font-size: 2vw;
-          font-weight: 600;
-        }
-        .experience_history__block_description{
-          font-size: 1.5vw;
-          font-weight: 400;
-        }
-        .experience_history__block_year{
-          font-size: 1.5vw;
-          font-weight: 400;
-        }
-        .experience_history__block_slash{
-          position: absolute;
-          top: 20px;
-          right: 0px;
-          margin-right: -40px;
-          width: 40px;
-          height: 10px;
-          background-color: #CCC;
-        }
-      }
-      .experience_history__block.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .box.visible {
-        opacity: 1; /* Показываем элемент */
-        transform: translateY(0); /* Возвращаем на место */
-      }
-
-
-      .experience_history_left{
-        margin-top: 150px;
-      }
-      .experience_history_right{
-        margin-top: 150px;
-      }
-      .experience_history_center{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .experience_history_center_now_sphere{
-          width: 50px;
-          height: 50px;
-          min-height: 50px;
-          border-radius: 50px;
-          border: 20px solid #CCC;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          .experience_history_center_now_sphere_coma{
-            width: 30px;
-            height: 30px;
-            border-radius: 30px;
-            background-color: #CCC;
           }
-          .experience_history_center_now_sphere_now{
-            position: absolute;
-            top:0px;
-            right: 0px;
-            margin-right: -220px;
-            font-size: 3vw;
+          .mainup_vizitka_left_name{
+            font-size: 1.3rem;
             font-weight: 600;
-            color: #CCC;
+          }
+          .mainup_vizitka_left_hello{}
+        }
+
+        .mainup_vizitka_right{
+          width: 40%;
+          height: 300px;
+          position: relative;
+          .mainup_vizitka_right_photo{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;clip-path: polygon(
+                          0% 10%,
+                          0% 100%,
+                          100% 110%,
+                          100% 0%
+          );
+          }
+          .mainup_vizitka_right_mask{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 80%;
+            height: 80%;
+            border: 3px solid #454545;
+            background-image: url('https://srsuportal.ru/files/profile/1713927464470_3985.jpeg'); /* Замените на путь к вашей фотографии */background-size: cover;
+            border-radius: 30% 40% 50% 70%;
+            animation: example 22s linear infinite;
+
+          }
+
+
+        }
+        @keyframes example {
+          0% {
+            border-radius: 30% 40% 50% 70%;
+          }
+          10% {
+            border-radius: 60% 50% 60% 40%;
+          }
+          20% {
+            border-radius: 50% 60% 70% 55%;
+          }
+          30% {
+            border-radius: 40% 50% 60% -70%;
+          }
+          40% {
+            border-radius: 70% 50% 80% 50%;
+          }
+          50% {
+            border-radius: 60% 70% 60% 50%;
+          }
+          60% {
+            border-radius: 50% 60% 70% 30%;
+          }
+          70% {
+            border-radius: 40% 50% 60% 70%;
+          }
+          80% {
+            border-radius: 60% 50% 40% 30%;
+          }
+          90% {
+            border-radius: 90% 50% 30% 40%;
+          }
+          100% {
+            border-radius: 30% 40% 50% 70%;
           }
         }
-        .experience_history_center_line{
-          width: 20px;
-          height: 100%;
-          min-height: 300px;
-          background-color: #CCC;
-          margin-top: -5px;
-          margin-bottom: 10px;
-          border-radius: 0 0 10px 10px;
-        }
-
-      }
-
-    }
-
-  }
-
-  .portfolio{}
-  .aboutme{}
-  .grabform{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    .grabform_line{
-      width: 80%;
-      height: 1px;
-      background-color: #CCC;
-    }
-    .grabform_title{
-      margin-top: 50px;
-      font-size: 3vw;
-      font-weight: 800;
-    }
-    .grabform_description{
-      margin-top: 20px;
-      font-size: 2vw;
-      font-weight: 600;
-      color: #CCC;
-      margin-bottom: 30px;
-      width: 80%;
-      text-align: center;
-      .small{
-        font-size: 12pt;
-        color: #454545;
       }
     }
-    .grabform_goods{
+
+    .reversesblocks{
       display: flex;
       flex-wrap: wrap;
       width: 80%;
-      .grabform_goods_block{
-        margin: 20px;
-        border: 1px solid #CCC;
-        width: calc(100% / 3 - 40px - 2px);
-        height: 550px;
+      justify-content: space-between;
+      margin-bottom: 100px;
+      perspective: 1000px; /* Добавляет перспективу для 3D-эффекта */
 
-        .grabform_goods_block_img{
-          height: 400px;
-          width: 100%;
-          position: relative;
-          background-size: cover;
-          background-position: center center;
-          .grabform_goods_block_open{
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-        }
-        .grabform_goods_block_name{
-          padding: 10px 20px 0px 20px;
-          font-size: 1.5vw;
-          font-weight: 600;
-        }
-        .grabform_goods_block_price{
+      div{
+        width: 300px;
+        height: 300px;
+        background-color: #D9D9D9;
+        color: #737373;
+        display: flex;
+        padding: 20px;
+        font-size: 30pt;
+        margin: 10px;
+        cursor: pointer;
+      }
+
+      .revers_btn_age{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 4vw;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
           display: flex;
-          justify-content: space-between;
+          justify-content: center;
           align-items: center;
-          padding: 0px 20px 10px 20px;
-          .grabform_goods_block_price_cost{
-            font-size: 1.2vw;
+        }
+
+        .card_front {
+
+        }
+
+        .card_back {
+          background: linear-gradient(45deg, #063155, #00AAFF);
+          color: #FFF;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+          display: flex;
+          flex-direction: column;
+          div{
+            background-color: rgba(0,0,0,0);
           }
-          .grabform_goods_block_price_curt{
-            padding: 20px 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #CCC;
-            transition: 0.2s;
-            cursor: pointer;
+          .card_back_up{
+            font-weight: 600;
+            font-size: 1.5vw;
+            line-height: 1;
+            color: #FFF;
           }
-          .grabform_goods_block_price_curt:hover{
-            background-color: #CCC;
-            transition: 0.2s;
+          .card_back_center{
+            display: none;
+          }
+          .card_back_bottom{
+            font-weight: 800;
+            font-size: 3vw;
+            line-height: 1;
+            color: #FFF;
           }
         }
       }
+      .revers_btn_level{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 4vw;
+        line-height: 0.9;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+        }
+
+        .card_back {
+          background: linear-gradient(45deg, #55064A, #F652FF);
+          color: #FFF;
+          font-size: 3vw;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+        }
+      }
+      .revers_btn_position{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 3vw;
+        line-height: 0.9;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+        }
+
+        .card_back {
+          background: linear-gradient(45deg, #065506, #59FF00);
+          color: #FFF;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+          display: flex;
+          flex-direction: column;
+          div{
+            background-color: rgba(0,0,0,0);
+          }
+          .card_back_up{
+            font-weight: 800;
+            font-size: 3vw;
+            line-height: 1;
+            color: #FFF;
+          }
+          .card_back_center{
+            display: none;
+          }
+          .card_back_bottom{
+            font-weight: 600;
+            font-size: 1.5vw;
+            line-height: 1;
+            color: #FFF;
+          }
+        }
+      }
+      .revers_btn_contact{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        line-height: 0.9;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+          font-size: 3vw;
+        }
+
+        .card_back {
+          width: calc(100% - 40px);
+          background: linear-gradient(45deg, #C01600, #FFB89A);
+          color: #FFF;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+          display: flex;
+          flex-direction: column;
+          div{
+            background-color: rgba(0,0,0,0);
+          }
+          .card_back_up{}
+          .card_back_center{
+            width: calc(100% - 40px);
+            height: 1px;
+            background-color: #FFF;
+          }
+          .card_back_bottom{
+            font-weight: 600;
+            font-size: 1.5vw;
+            line-height: 1;
+            color: #FFF;
+          }
+        }
+      }
+      .revers_btn_age:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+      .revers_btn_level:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+      .revers_btn_position:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+      .revers_btn_contact:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
     }
-  }
-  .contact{
-    width: 100%;
-    min-height: 350px;
-    background-color: #454545;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px 0;
-    .contact_left{
+
+    .experience{
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
-      justify-content: center;
-      padding: 20px;
-      width: calc(50% - 40px);
-      .contact_left_title{
-        color: #FFF;
+      align-items: center;
+      width: 80%;
+      margin-bottom: 100px;
+      .experience_run{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //font-size: 30pt;
+        width: 100%;
+        margin-top: 10px;
+        i{
+          font-size: 5vw;
+          color: #CCC;
+        }
+      }
+      .experience_title{
+        font-size: 5vw;
+        margin-bottom: 50px;
+
+      }
+      .experience_history{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .experience_history__block{
+          display: flex;
+          flex-direction: column;
+          min-height: 250px;
+          max-width: 350px;
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+          .experience_history__block_title{
+            font-size: 2vw;
+            font-weight: 600;
+          }
+          .experience_history__block_description{
+            font-size: 1.5vw;
+            font-weight: 400;
+          }
+          .experience_history__block_year{
+            font-size: 1.5vw;
+            font-weight: 400;
+          }
+          .experience_history__block_slash{
+            position: absolute;
+            top: 20px;
+            right: 0px;
+            margin-right: -40px;
+            width: 40px;
+            height: 10px;
+            background-color: #CCC;
+          }
+        }
+        .experience_history__block.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .box.visible {
+          opacity: 1; /* Показываем элемент */
+          transform: translateY(0); /* Возвращаем на место */
+        }
+
+
+        .experience_history_left{
+          margin-top: 150px;
+        }
+        .experience_history_right{
+          margin-top: 150px;
+        }
+        .experience_history_center{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .experience_history_center_now_sphere{
+            width: 50px;
+            height: 50px;
+            min-height: 50px;
+            border-radius: 50px;
+            border: 20px solid #CCC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .experience_history_center_now_sphere_coma{
+              width: 30px;
+              height: 30px;
+              border-radius: 30px;
+              background-color: #CCC;
+            }
+            .experience_history_center_now_sphere_now{
+              position: absolute;
+              top:0px;
+              right: 0px;
+              margin-right: -220px;
+              font-size: 3vw;
+              font-weight: 600;
+              color: #CCC;
+            }
+          }
+          .experience_history_center_line{
+            width: 20px;
+            height: 100%;
+            min-height: 300px;
+            background-color: #CCC;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            border-radius: 0 0 10px 10px;
+          }
+
+        }
+
+      }
+
+    }
+
+    .portfolio{}
+    .aboutme{}
+    .grabform{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .grabform_line{
+        width: 80%;
+        height: 1px;
+        background-color: #CCC;
+      }
+      .grabform_title{
+        margin-top: 50px;
+        font-size: 3vw;
+        font-weight: 800;
+      }
+      .grabform_description{
+        margin-top: 20px;
         font-size: 2vw;
         font-weight: 600;
+        color: #CCC;
+        margin-bottom: 30px;
+        width: 80%;
+        text-align: center;
+        .small{
+          font-size: 12pt;
+          color: #454545;
+        }
       }
-      .contact_left_input{
-        padding: 20px;
-        border: none;
-        outline: none;
-        width: 320px;
-        height: 30px;
-        font-size: 16pt;
-      }
-      .contact_left_btn{
+      .grabform_goods{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        width: 320px;
-        height: 30px;
-        font-size: 16pt;
-        background-color: #5698ff;
-        color: #FFF;
-        margin-top: 10px;
-      }
-      .contact_left_adress{
-        color: #FFF;
-        font-size: 1vw;
-        font-weight: 400;
-        margin-top: 30px;
+        flex-wrap: wrap;
+        width: 80%;
+        .grabform_goods_block{
+          margin: 20px;
+          border: 1px solid #CCC;
+          width: calc(100% / 3 - 40px - 2px);
+          height: 550px;
+
+          .grabform_goods_block_img{
+            height: 400px;
+            width: 100%;
+            position: relative;
+            background-size: cover;
+            background-position: center center;
+            .grabform_goods_block_open{
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          .grabform_goods_block_name{
+            padding: 10px 20px 0px 20px;
+            font-size: 1.5vw;
+            font-weight: 600;
+          }
+          .grabform_goods_block_price{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px 10px 20px;
+            .grabform_goods_block_price_cost{
+              font-size: 1.2vw;
+            }
+            .grabform_goods_block_price_curt{
+              padding: 20px 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 1px solid #CCC;
+              transition: 0.2s;
+              cursor: pointer;
+            }
+            .grabform_goods_block_price_curt:hover{
+              background-color: #CCC;
+              transition: 0.2s;
+            }
+          }
+        }
       }
     }
-    .contact_right{
-      border-left: 1px solid #F1F1F1;
+    .contact{
+      width: 100%;
+      min-height: 350px;
+      background-color: #454545;
       display: flex;
-      flex-direction: column;
-      padding: 20px;
-      width: calc(50% - 41px);
-      color: #FFF;
-      .contact_right_title{
-        font-size: 4vw;
-        color: #FFF;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      .contact_left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 20px;
+        width: calc(50% - 40px);
+        .contact_left_title{
+          color: #FFF;
+          font-size: 2vw;
+          font-weight: 600;
+        }
+        .contact_left_input{
+          padding: 20px;
+          border: none;
+          outline: none;
+          width: 320px;
+          height: 30px;
+          font-size: 16pt;
+        }
+        .contact_left_btn{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          width: 320px;
+          height: 30px;
+          font-size: 16pt;
+          background-color: #5698ff;
+          color: #FFF;
+          margin-top: 10px;
+        }
+        .contact_left_adress{
+          color: #FFF;
+          font-size: 1vw;
+          font-weight: 400;
+          margin-top: 30px;
+        }
       }
-      .contact_right_mail{
-        font-size: 2vw;
+      .contact_right{
+        border-left: 1px solid #F1F1F1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: calc(50% - 41px);
         color: #FFF;
-      }
-      .contact_right_btns{
-        font-size: 2vw;
-        color: #FFF;
-        margin-top: 20px;
-        i{
-          margin-right: 2vw;
+        .contact_right_title{
           font-size: 4vw;
           color: #FFF;
-          cursor: pointer;
-          transition: 0.2s;
         }
-        i:hover{
-          color: #5698ff;
-          transition: 0.2s;
+        .contact_right_mail{
+          font-size: 2vw;
+          color: #FFF;
+        }
+        .contact_right_btns{
+          font-size: 2vw;
+          color: #FFF;
+          margin-top: 20px;
+          i{
+            margin-right: 2vw;
+            font-size: 4vw;
+            color: #FFF;
+            cursor: pointer;
+            transition: 0.2s;
+          }
+          i:hover{
+            color: #5698ff;
+            transition: 0.2s;
+          }
         }
       }
+
+    }
+
+
+  }
+}
+@media screen and (min-width: 1540px) and (max-width: 1800px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+      width: calc(100% - 40px);
+      margin-bottom: 100px;
+      .header_logo{
+        font-weight: 800;
+        font-size: 1.2em;
+      }
+      .header_menu{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        .header_menu_btn{
+          margin-right: 10px;
+          padding: 10px;
+          font-weight: 500;
+          transition: 0.2s;
+          height: 20px;
+        }
+        .header_menu_btn:hover{
+          color: #CCC;
+          border-bottom: 3px solid #CCC;
+          transition: 0.2s;
+          padding-bottom: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+    .mainup{
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 100px;
+      .mainup_stack{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: calc(50% - 10px);
+        margin-right: 10px;
+        i{
+          font-size: 94pt;
+          margin-right: 30px;
+          cursor: pointer;
+        }
+      }
+      .mainup_vizitka{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(50% - 10px);
+        margin-right: 10px;
+        .mainup_vizitka_left{
+          width: calc(50%);
+          .mainup_vizitka_left_title{
+            font-size: 2.3rem;
+            font-weight: 800;
+
+          }
+          .mainup_vizitka_left_name{
+            font-size: 1.3rem;
+            font-weight: 600;
+          }
+          .mainup_vizitka_left_hello{}
+        }
+
+        .mainup_vizitka_right{
+          width: 40%;
+          height: 300px;
+          position: relative;
+          .mainup_vizitka_right_photo{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;clip-path: polygon(
+                          0% 10%,
+                          0% 100%,
+                          100% 110%,
+                          100% 0%
+          );
+          }
+          .mainup_vizitka_right_mask{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 80%;
+            height: 80%;
+            border: 3px solid #454545;
+            background-image: url('https://srsuportal.ru/files/profile/1713927464470_3985.jpeg'); /* Замените на путь к вашей фотографии */background-size: cover;
+            border-radius: 30% 40% 50% 70%;
+            animation: example 22s linear infinite;
+
+          }
+
+
+        }
+        @keyframes example {
+          0% {
+            border-radius: 30% 40% 50% 70%;
+          }
+          10% {
+            border-radius: 60% 50% 60% 40%;
+          }
+          20% {
+            border-radius: 50% 60% 70% 55%;
+          }
+          30% {
+            border-radius: 40% 50% 60% -70%;
+          }
+          40% {
+            border-radius: 70% 50% 80% 50%;
+          }
+          50% {
+            border-radius: 60% 70% 60% 50%;
+          }
+          60% {
+            border-radius: 50% 60% 70% 30%;
+          }
+          70% {
+            border-radius: 40% 50% 60% 70%;
+          }
+          80% {
+            border-radius: 60% 50% 40% 30%;
+          }
+          90% {
+            border-radius: 90% 50% 30% 40%;
+          }
+          100% {
+            border-radius: 30% 40% 50% 70%;
+          }
+        }
+      }
+    }
+
+    .reversesblocks{
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      justify-content: space-between;
+      margin-bottom: 100px;
+      perspective: 1000px; /* Добавляет перспективу для 3D-эффекта */
+
+      div{
+        width: 220px;
+        height: 220px;
+        background-color: #D9D9D9;
+        color: #737373;
+        display: flex;
+        padding: 20px;
+        font-size: 30pt;
+        margin: 10px;
+        cursor: pointer;
+      }
+
+      .revers_btn_age{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 4vw;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+        }
+
+        .card_back {
+          background: linear-gradient(45deg, #063155, #00AAFF);
+          color: #FFF;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+          display: flex;
+          flex-direction: column;
+          div{
+            background-color: rgba(0,0,0,0);
+          }
+          .card_back_up{
+            font-weight: 600;
+            font-size: 1.5vw;
+            line-height: 1;
+            color: #FFF;
+          }
+          .card_back_center{
+            display: none;
+          }
+          .card_back_bottom{
+            font-weight: 800;
+            font-size: 3vw;
+            line-height: 1;
+            color: #FFF;
+          }
+        }
+      }
+      .revers_btn_level{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 4vw;
+        line-height: 0.9;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+        }
+
+        .card_back {
+          background: linear-gradient(45deg, #55064A, #F652FF);
+          color: #FFF;
+          font-size: 3vw;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+        }
+      }
+      .revers_btn_position{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 3vw;
+        line-height: 0.9;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+        }
+
+        .card_back {
+          background: linear-gradient(45deg, #065506, #59FF00);
+          color: #FFF;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+          display: flex;
+          flex-direction: column;
+          div{
+            background-color: rgba(0,0,0,0);
+          }
+          .card_back_up{
+            font-weight: 800;
+            font-size: 3vw;
+            line-height: 1;
+            color: #FFF;
+          }
+          .card_back_center{
+            display: none;
+          }
+          .card_back_bottom{
+            font-weight: 600;
+            font-size: 1.5vw;
+            line-height: 1;
+            color: #FFF;
+          }
+        }
+      }
+      .revers_btn_contact{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        line-height: 0.9;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+          font-size: 3vw;
+        }
+
+        .card_back {
+          width: calc(100% - 40px);
+          background: linear-gradient(45deg, #C01600, #FFB89A);
+          color: #FFF;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+          display: flex;
+          flex-direction: column;
+          div{
+            background-color: rgba(0,0,0,0);
+          }
+          .card_back_up{}
+          .card_back_center{
+            width: calc(100% - 40px);
+            height: 1px;
+            background-color: #FFF;
+          }
+          .card_back_bottom{
+            font-weight: 600;
+            font-size: 1.5vw;
+            line-height: 1;
+            color: #FFF;
+          }
+        }
+      }
+      .revers_btn_age:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+      .revers_btn_level:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+      .revers_btn_position:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+      .revers_btn_contact:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+    }
+
+    .experience{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      margin-bottom: 100px;
+      .experience_run{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //font-size: 30pt;
+        width: 100%;
+        margin-top: 10px;
+        i{
+          font-size: 5vw;
+          color: #CCC;
+        }
+      }
+      .experience_title{
+        font-size: 5vw;
+        margin-bottom: 50px;
+
+      }
+      .experience_history{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .experience_history__block{
+          display: flex;
+          flex-direction: column;
+          min-height: 250px;
+          max-width: 350px;
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+          .experience_history__block_title{
+            font-size: 2vw;
+            font-weight: 600;
+          }
+          .experience_history__block_description{
+            font-size: 1.5vw;
+            font-weight: 400;
+          }
+          .experience_history__block_year{
+            font-size: 1.5vw;
+            font-weight: 400;
+          }
+          .experience_history__block_slash{
+            position: absolute;
+            top: 20px;
+            right: 0px;
+            margin-right: -40px;
+            width: 40px;
+            height: 10px;
+            background-color: #CCC;
+          }
+        }
+        .experience_history__block.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .box.visible {
+          opacity: 1; /* Показываем элемент */
+          transform: translateY(0); /* Возвращаем на место */
+        }
+
+
+        .experience_history_left{
+          margin-top: 150px;
+        }
+        .experience_history_right{
+          margin-top: 150px;
+        }
+        .experience_history_center{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .experience_history_center_now_sphere{
+            width: 50px;
+            height: 50px;
+            min-height: 50px;
+            border-radius: 50px;
+            border: 20px solid #CCC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .experience_history_center_now_sphere_coma{
+              width: 30px;
+              height: 30px;
+              border-radius: 30px;
+              background-color: #CCC;
+            }
+            .experience_history_center_now_sphere_now{
+              position: absolute;
+              top:0px;
+              right: 0px;
+              margin-right: -220px;
+              font-size: 3vw;
+              font-weight: 600;
+              color: #CCC;
+            }
+          }
+          .experience_history_center_line{
+            width: 20px;
+            height: 100%;
+            min-height: 300px;
+            background-color: #CCC;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            border-radius: 0 0 10px 10px;
+          }
+
+        }
+
+      }
+
+    }
+
+    .portfolio{}
+    .aboutme{}
+    .grabform{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .grabform_line{
+        width: 80%;
+        height: 1px;
+        background-color: #CCC;
+      }
+      .grabform_title{
+        margin-top: 50px;
+        font-size: 3vw;
+        font-weight: 800;
+      }
+      .grabform_description{
+        margin-top: 20px;
+        font-size: 2vw;
+        font-weight: 600;
+        color: #CCC;
+        margin-bottom: 30px;
+        width: 80%;
+        text-align: center;
+        .small{
+          font-size: 12pt;
+          color: #454545;
+        }
+      }
+      .grabform_goods{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        .grabform_goods_block{
+          margin: 20px;
+          border: 1px solid #CCC;
+          width: calc(100% / 3 - 40px - 2px);
+          height: 550px;
+
+          .grabform_goods_block_img{
+            height: 400px;
+            width: 100%;
+            position: relative;
+            background-size: cover;
+            background-position: center center;
+            .grabform_goods_block_open{
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          .grabform_goods_block_name{
+            padding: 10px 20px 0px 20px;
+            font-size: 1.5vw;
+            font-weight: 600;
+          }
+          .grabform_goods_block_price{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px 10px 20px;
+            .grabform_goods_block_price_cost{
+              font-size: 1.2vw;
+            }
+            .grabform_goods_block_price_curt{
+              padding: 20px 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 1px solid #CCC;
+              transition: 0.2s;
+              cursor: pointer;
+            }
+            .grabform_goods_block_price_curt:hover{
+              background-color: #CCC;
+              transition: 0.2s;
+            }
+          }
+        }
+      }
+    }
+    .contact{
+      width: 100%;
+      min-height: 350px;
+      background-color: #454545;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      .contact_left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 20px;
+        width: calc(50% - 40px);
+        .contact_left_title{
+          color: #FFF;
+          font-size: 2vw;
+          font-weight: 600;
+        }
+        .contact_left_input{
+          padding: 20px;
+          border: none;
+          outline: none;
+          width: 320px;
+          height: 30px;
+          font-size: 16pt;
+        }
+        .contact_left_btn{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          width: 320px;
+          height: 30px;
+          font-size: 16pt;
+          background-color: #5698ff;
+          color: #FFF;
+          margin-top: 10px;
+        }
+        .contact_left_adress{
+          color: #FFF;
+          font-size: 1vw;
+          font-weight: 400;
+          margin-top: 30px;
+        }
+      }
+      .contact_right{
+        border-left: 1px solid #F1F1F1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: calc(50% - 41px);
+        color: #FFF;
+        .contact_right_title{
+          font-size: 4vw;
+          color: #FFF;
+        }
+        .contact_right_mail{
+          font-size: 2vw;
+          color: #FFF;
+        }
+        .contact_right_btns{
+          font-size: 2vw;
+          color: #FFF;
+          margin-top: 20px;
+          i{
+            margin-right: 2vw;
+            font-size: 4vw;
+            color: #FFF;
+            cursor: pointer;
+            transition: 0.2s;
+          }
+          i:hover{
+            color: #5698ff;
+            transition: 0.2s;
+          }
+        }
+      }
+
+    }
+
+
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1540px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+      width: calc(100% - 40px);
+      margin-bottom: 100px;
+      .header_logo{
+        font-weight: 800;
+        font-size: 1.2em;
+      }
+      .header_menu{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        .header_menu_btn{
+          margin-right: 10px;
+          padding: 10px;
+          font-weight: 500;
+          transition: 0.2s;
+          height: 20px;
+        }
+        .header_menu_btn:hover{
+          color: #CCC;
+          border-bottom: 3px solid #CCC;
+          transition: 0.2s;
+          padding-bottom: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+    .mainup{
+      max-width: 80%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 100px;
+      .mainup_stack{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: calc(100% - 10px);
+        margin-right: 10px;
+        i{
+          font-size: 94pt;
+          margin-right: 30px;
+          cursor: pointer;
+        }
+      }
+      .mainup_vizitka{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 10px);
+        margin-right: 10px;
+        .mainup_vizitka_left{
+          width: calc(50%);
+          .mainup_vizitka_left_title{
+            font-size: 2.3rem;
+            font-weight: 800;
+
+          }
+          .mainup_vizitka_left_name{
+            font-size: 1.3rem;
+            font-weight: 600;
+          }
+          .mainup_vizitka_left_hello{}
+        }
+
+        .mainup_vizitka_right{
+          width: 40%;
+          height: 300px;
+          position: relative;
+          .mainup_vizitka_right_photo{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;clip-path: polygon(
+                          0% 10%,
+                          0% 100%,
+                          100% 110%,
+                          100% 0%
+          );
+          }
+          .mainup_vizitka_right_mask{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 80%;
+            height: 80%;
+            border: 3px solid #454545;
+            background-image: url('https://srsuportal.ru/files/profile/1713927464470_3985.jpeg'); /* Замените на путь к вашей фотографии */background-size: cover;
+            border-radius: 30% 40% 50% 70%;
+            animation: example 22s linear infinite;
+
+          }
+
+
+        }
+        @keyframes example {
+          0% {
+            border-radius: 30% 40% 50% 70%;
+          }
+          10% {
+            border-radius: 60% 50% 60% 40%;
+          }
+          20% {
+            border-radius: 50% 60% 70% 55%;
+          }
+          30% {
+            border-radius: 40% 50% 60% -70%;
+          }
+          40% {
+            border-radius: 70% 50% 80% 50%;
+          }
+          50% {
+            border-radius: 60% 70% 60% 50%;
+          }
+          60% {
+            border-radius: 50% 60% 70% 30%;
+          }
+          70% {
+            border-radius: 40% 50% 60% 70%;
+          }
+          80% {
+            border-radius: 60% 50% 40% 30%;
+          }
+          90% {
+            border-radius: 90% 50% 30% 40%;
+          }
+          100% {
+            border-radius: 30% 40% 50% 70%;
+          }
+        }
+      }
+    }
+
+    .reversesblocks{
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      justify-content: space-between;
+      margin-bottom: 100px;
+      perspective: 1000px; /* Добавляет перспективу для 3D-эффекта */
+
+      div{
+        width: 170px;
+        height: 170px;
+        background-color: #D9D9D9;
+        color: #737373;
+        display: flex;
+        padding: 20px;
+        font-size: 30pt;
+        margin: 10px;
+        cursor: pointer;
+      }
+
+      .revers_btn_age{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 3vw;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+        }
+
+        .card_back {
+          background: linear-gradient(45deg, #063155, #00AAFF);
+          color: #FFF;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+          display: flex;
+          flex-direction: column;
+          div{
+            background-color: rgba(0,0,0,0);
+          }
+          .card_back_up{
+            font-weight: 600;
+            font-size: 1.5vw;
+            line-height: 1;
+            color: #FFF;
+          }
+          .card_back_center{
+            display: none;
+          }
+          .card_back_bottom{
+            font-weight: 800;
+            font-size: 3vw;
+            line-height: 1;
+            color: #FFF;
+          }
+        }
+      }
+      .revers_btn_level{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 3vw;
+        line-height: 0.9;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        word-break: break-word;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+        }
+
+        .card_back {
+          background: linear-gradient(45deg, #55064A, #F652FF);
+          color: #FFF;
+          font-size: 3vw;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+        }
+      }
+      .revers_btn_position{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 3vw;
+        line-height: 0.9;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+        }
+
+        .card_back {
+          background: linear-gradient(45deg, #065506, #59FF00);
+          color: #FFF;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+          display: flex;
+          flex-direction: column;
+          div{
+            background-color: rgba(0,0,0,0);
+          }
+          .card_back_up{
+            font-weight: 800;
+            font-size: 3vw;
+            line-height: 1;
+            color: #FFF;
+          }
+          .card_back_center{
+            display: none;
+          }
+          .card_back_bottom{
+            font-weight: 600;
+            font-size: 1.5vw;
+            line-height: 1;
+            color: #FFF;
+          }
+        }
+      }
+      .revers_btn_contact{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        line-height: 0.9;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+          font-size: 3vw;
+        }
+
+        .card_back {
+          width: calc(100% - 40px);
+          background: linear-gradient(45deg, #C01600, #FFB89A);
+          color: #FFF;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+          display: flex;
+          flex-direction: column;
+          div{
+            background-color: rgba(0,0,0,0);
+          }
+          .card_back_up{}
+          .card_back_center{
+            width: calc(100% - 40px);
+            height: 1px;
+            background-color: #FFF;
+          }
+          .card_back_bottom{
+            font-weight: 600;
+            font-size: 1.5vw;
+            line-height: 1;
+            color: #FFF;
+          }
+        }
+      }
+      .revers_btn_age:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+      .revers_btn_level:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+      .revers_btn_position:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+      .revers_btn_contact:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+    }
+
+    .experience{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      margin-bottom: 100px;
+      .experience_run{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //font-size: 30pt;
+        width: 100%;
+        margin-top: 10px;
+        i{
+          font-size: 5vw;
+          color: #CCC;
+        }
+      }
+      .experience_title{
+        font-size: 5vw;
+        margin-bottom: 50px;
+
+      }
+      .experience_history{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .experience_history__block{
+          display: flex;
+          flex-direction: column;
+          min-height: 250px;
+          max-width: 350px;
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+          .experience_history__block_title{
+            font-size: 2vw;
+            font-weight: 600;
+          }
+          .experience_history__block_description{
+            font-size: 1.5vw;
+            font-weight: 400;
+          }
+          .experience_history__block_year{
+            font-size: 1.5vw;
+            font-weight: 400;
+          }
+          .experience_history__block_slash{
+            position: absolute;
+            top: 20px;
+            right: 0px;
+            margin-right: -40px;
+            width: 40px;
+            height: 10px;
+            background-color: #CCC;
+          }
+        }
+        .experience_history__block.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .box.visible {
+          opacity: 1; /* Показываем элемент */
+          transform: translateY(0); /* Возвращаем на место */
+        }
+
+
+        .experience_history_left{
+          margin-top: 150px;
+        }
+        .experience_history_right{
+          margin-top: 150px;
+        }
+        .experience_history_center{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .experience_history_center_now_sphere{
+            width: 50px;
+            height: 50px;
+            min-height: 50px;
+            border-radius: 50px;
+            border: 20px solid #CCC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .experience_history_center_now_sphere_coma{
+              width: 30px;
+              height: 30px;
+              border-radius: 30px;
+              background-color: #CCC;
+            }
+            .experience_history_center_now_sphere_now{
+              position: absolute;
+              top:0px;
+              right: 0px;
+              margin-right: -220px;
+              font-size: 3vw;
+              font-weight: 600;
+              color: #CCC;
+            }
+          }
+          .experience_history_center_line{
+            width: 20px;
+            height: 100%;
+            min-height: 300px;
+            background-color: #CCC;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            border-radius: 0 0 10px 10px;
+          }
+
+        }
+
+      }
+
+    }
+
+    .portfolio{}
+    .aboutme{}
+    .grabform{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .grabform_line{
+        width: 80%;
+        height: 1px;
+        background-color: #CCC;
+      }
+      .grabform_title{
+        margin-top: 50px;
+        font-size: 3vw;
+        font-weight: 800;
+      }
+      .grabform_description{
+        margin-top: 20px;
+        font-size: 2vw;
+        font-weight: 600;
+        color: #CCC;
+        margin-bottom: 30px;
+        width: 80%;
+        text-align: center;
+        .small{
+          font-size: 12pt;
+          color: #454545;
+        }
+      }
+      .grabform_goods{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        .grabform_goods_block{
+          margin: 20px;
+          border: 1px solid #CCC;
+          width: calc(100% / 3 - 40px - 2px);
+          height: 550px;
+
+          .grabform_goods_block_img{
+            height: 400px;
+            width: 100%;
+            position: relative;
+            background-size: cover;
+            background-position: center center;
+            .grabform_goods_block_open{
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          .grabform_goods_block_name{
+            padding: 10px 20px 0px 20px;
+            font-size: 1.5vw;
+            font-weight: 600;
+          }
+          .grabform_goods_block_price{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px 10px 20px;
+            margin-top: 10px;
+            .grabform_goods_block_price_cost{
+              font-size: 1.9vw;
+            }
+            .grabform_goods_block_price_curt{
+              padding: 20px 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 1px solid #CCC;
+              transition: 0.2s;
+              cursor: pointer;
+            }
+            .grabform_goods_block_price_curt:hover{
+              background-color: #CCC;
+              transition: 0.2s;
+            }
+          }
+        }
+      }
+    }
+    .contact{
+      width: 100%;
+      min-height: 350px;
+      background-color: #454545;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      .contact_left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 20px;
+        width: calc(50% - 40px);
+        .contact_left_title{
+          color: #FFF;
+          font-size: 2vw;
+          font-weight: 600;
+        }
+        .contact_left_input{
+          padding: 20px;
+          border: none;
+          outline: none;
+          width: 320px;
+          height: 30px;
+          font-size: 16pt;
+        }
+        .contact_left_btn{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          width: 320px;
+          height: 30px;
+          font-size: 16pt;
+          background-color: #5698ff;
+          color: #FFF;
+          margin-top: 10px;
+        }
+        .contact_left_adress{
+          color: #FFF;
+          font-size: 1.5vw;
+          font-weight: 400;
+          margin-top: 30px;
+        }
+      }
+      .contact_right{
+        border-left: 1px solid #F1F1F1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: calc(50% - 41px);
+        color: #FFF;
+        .contact_right_title{
+          font-size: 4vw;
+          color: #FFF;
+        }
+        .contact_right_mail{
+          font-size: 2vw;
+          color: #FFF;
+        }
+        .contact_right_btns{
+          font-size: 2vw;
+          color: #FFF;
+          margin-top: 20px;
+          i{
+            margin-right: 2vw;
+            font-size: 4vw;
+            color: #FFF;
+            cursor: pointer;
+            transition: 0.2s;
+          }
+          i:hover{
+            color: #5698ff;
+            transition: 0.2s;
+          }
+        }
+      }
+
+    }
+
+
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+      width: calc(100% - 40px);
+      margin-bottom: 100px;
+      .header_logo{
+        font-weight: 800;
+        font-size: 1.2em;
+      }
+      .header_menu{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        .header_menu_btn{
+          margin-right: 10px;
+          padding: 10px;
+          font-weight: 500;
+          transition: 0.2s;
+          height: 20px;
+        }
+        .header_menu_btn:hover{
+          color: #CCC;
+          border-bottom: 3px solid #CCC;
+          transition: 0.2s;
+          padding-bottom: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+    .mainup{
+      max-width: 80%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 100px;
+      .mainup_stack{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: calc(100% - 10px);
+        margin-right: 10px;
+        i{
+          font-size: 94pt;
+          margin-right: 30px;
+          cursor: pointer;
+        }
+      }
+      .mainup_vizitka{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 10px);
+        margin-right: 10px;
+        .mainup_vizitka_left{
+          width: calc(50%);
+          .mainup_vizitka_left_title{
+            font-size: 2.3rem;
+            font-weight: 800;
+
+          }
+          .mainup_vizitka_left_name{
+            font-size: 1.3rem;
+            font-weight: 600;
+          }
+          .mainup_vizitka_left_hello{}
+        }
+
+        .mainup_vizitka_right{
+          width: 40%;
+          height: 300px;
+          position: relative;
+          .mainup_vizitka_right_photo{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;clip-path: polygon(
+                          0% 10%,
+                          0% 100%,
+                          100% 110%,
+                          100% 0%
+          );
+          }
+          .mainup_vizitka_right_mask{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 80%;
+            height: 80%;
+            border: 3px solid #454545;
+            background-image: url('https://srsuportal.ru/files/profile/1713927464470_3985.jpeg'); /* Замените на путь к вашей фотографии */background-size: cover;
+            border-radius: 30% 40% 50% 70%;
+            animation: example 22s linear infinite;
+
+          }
+
+
+        }
+        @keyframes example {
+          0% {
+            border-radius: 30% 40% 50% 70%;
+          }
+          10% {
+            border-radius: 60% 50% 60% 40%;
+          }
+          20% {
+            border-radius: 50% 60% 70% 55%;
+          }
+          30% {
+            border-radius: 40% 50% 60% -70%;
+          }
+          40% {
+            border-radius: 70% 50% 80% 50%;
+          }
+          50% {
+            border-radius: 60% 70% 60% 50%;
+          }
+          60% {
+            border-radius: 50% 60% 70% 30%;
+          }
+          70% {
+            border-radius: 40% 50% 60% 70%;
+          }
+          80% {
+            border-radius: 60% 50% 40% 30%;
+          }
+          90% {
+            border-radius: 90% 50% 30% 40%;
+          }
+          100% {
+            border-radius: 30% 40% 50% 70%;
+          }
+        }
+      }
+    }
+
+    .reversesblocks{
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      justify-content: space-between;
+      margin-bottom: 100px;
+      perspective: 1000px; /* Добавляет перспективу для 3D-эффекта */
+
+      div{
+        width: calc(100% /2 - 60px);
+        height: 300px;
+        background-color: #D9D9D9;
+        color: #737373;
+        display: flex;
+        padding: 20px;
+        font-size: 30pt;
+        margin: 10px;
+        cursor: pointer;
+      }
+
+      .revers_btn_age{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 3vw;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+        }
+
+        .card_back {
+          width: calc(100% - 40px);
+          background: linear-gradient(45deg, #063155, #00AAFF);
+          color: #FFF;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+          display: flex;
+          flex-direction: column;
+          div{
+            background-color: rgba(0,0,0,0);
+          }
+          .card_back_up{
+            font-weight: 600;
+            font-size: 2vw;
+            line-height: 1;
+            color: #FFF;
+          }
+          .card_back_center{
+            display: none;
+          }
+          .card_back_bottom{
+            font-weight: 800;
+            font-size: 3vw;
+            line-height: 1;
+            color: #FFF;
+          }
+        }
+      }
+      .revers_btn_level{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 3vw;
+        line-height: 0.9;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        word-break: break-word;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+        }
+
+        .card_back {
+          width: calc(100% - 40px);
+          background: linear-gradient(45deg, #55064A, #F652FF);
+          color: #FFF;
+          font-size: 3vw;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+        }
+      }
+      .revers_btn_position{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 3vw;
+        line-height: 0.9;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+        }
+
+        .card_back {
+          width: calc(100% - 40px);
+          background: linear-gradient(45deg, #065506, #59FF00);
+          color: #FFF;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+          display: flex;
+          flex-direction: column;
+          div{
+            background-color: rgba(0,0,0,0);
+          }
+          .card_back_up{
+            font-weight: 800;
+            font-size: 4vw;
+            line-height: 1;
+            color: #FFF;
+          }
+          .card_back_center{
+            display: none;
+          }
+          .card_back_bottom{
+            font-weight: 600;
+            font-size: 2vw;
+            line-height: 1;
+            color: #FFF;
+          }
+        }
+      }
+      .revers_btn_contact{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        line-height: 0.9;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+          font-size: 3vw;
+        }
+
+        .card_back {
+          width: calc(100% - 40px);
+          background: linear-gradient(45deg, #C01600, #FFB89A);
+          color: #FFF;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+          display: flex;
+          flex-direction: column;
+          div{
+            background-color: rgba(0,0,0,0);
+          }
+          .card_back_up{}
+          .card_back_center{
+            width: calc(100% - 40px);
+            height: 1px;
+            background-color: #FFF;
+          }
+          .card_back_bottom{
+            font-weight: 600;
+            font-size: 2vw;
+            line-height: 1;
+            color: #FFF;
+          }
+        }
+      }
+      .revers_btn_age:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+      .revers_btn_level:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+      .revers_btn_position:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+      .revers_btn_contact:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+    }
+
+    .experience{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      margin-bottom: 100px;
+      .experience_run{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //font-size: 30pt;
+        width: 100%;
+        margin-top: 10px;
+        i{
+          font-size: 5vw;
+          color: #CCC;
+        }
+      }
+      .experience_title{
+        font-size: 5vw;
+        margin-bottom: 50px;
+
+      }
+      .experience_history{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .experience_history__block{
+          display: flex;
+          flex-direction: column;
+          min-height: 250px;
+          max-width: 350px;
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+          .experience_history__block_title{
+            font-size: 2vw;
+            font-weight: 600;
+          }
+          .experience_history__block_description{
+            font-size: 1.5vw;
+            font-weight: 400;
+          }
+          .experience_history__block_year{
+            font-size: 1.5vw;
+            font-weight: 400;
+          }
+          .experience_history__block_slash{
+            position: absolute;
+            top: 20px;
+            right: 0px;
+            margin-right: -40px;
+            width: 40px;
+            height: 10px;
+            background-color: #CCC;
+          }
+        }
+        .experience_history__block.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .box.visible {
+          opacity: 1; /* Показываем элемент */
+          transform: translateY(0); /* Возвращаем на место */
+        }
+
+
+        .experience_history_left{
+          margin-top: 150px;
+        }
+        .experience_history_right{
+          margin-top: 150px;
+        }
+        .experience_history_center{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .experience_history_center_now_sphere{
+            width: 50px;
+            height: 50px;
+            min-height: 50px;
+            border-radius: 50px;
+            border: 20px solid #CCC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .experience_history_center_now_sphere_coma{
+              width: 30px;
+              height: 30px;
+              border-radius: 30px;
+              background-color: #CCC;
+            }
+            .experience_history_center_now_sphere_now{
+              position: absolute;
+              top:0px;
+              right: 0px;
+              margin-right: -220px;
+              font-size: 3vw;
+              font-weight: 600;
+              color: #CCC;
+            }
+          }
+          .experience_history_center_line{
+            width: 20px;
+            height: 100%;
+            min-height: 300px;
+            background-color: #CCC;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            border-radius: 0 0 10px 10px;
+          }
+
+        }
+
+      }
+
+    }
+
+    .portfolio{}
+    .aboutme{}
+    .grabform{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .grabform_line{
+        width: 80%;
+        height: 1px;
+        background-color: #CCC;
+      }
+      .grabform_title{
+        margin-top: 50px;
+        font-size: 3vw;
+        font-weight: 800;
+      }
+      .grabform_description{
+        margin-top: 20px;
+        font-size: 2vw;
+        font-weight: 600;
+        color: #CCC;
+        margin-bottom: 30px;
+        width: 80%;
+        text-align: center;
+        .small{
+          font-size: 12pt;
+          color: #454545;
+        }
+      }
+      .grabform_goods{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        .grabform_goods_block{
+          margin: 20px;
+          border: 1px solid #CCC;
+          width: calc(100% / 3 - 40px - 2px);
+          height: 550px;
+
+          .grabform_goods_block_img{
+            height: 400px;
+            width: 100%;
+            position: relative;
+            background-size: cover;
+            background-position: center center;
+            .grabform_goods_block_open{
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          .grabform_goods_block_name{
+            padding: 10px 20px 0px 20px;
+            font-size: 1.5vw;
+            font-weight: 600;
+          }
+          .grabform_goods_block_price{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px 10px 20px;
+            margin-top: 10px;
+            .grabform_goods_block_price_cost{
+              font-size: 1.9vw;
+            }
+            .grabform_goods_block_price_curt{
+              padding: 20px 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 1px solid #CCC;
+              transition: 0.2s;
+              cursor: pointer;
+            }
+            .grabform_goods_block_price_curt:hover{
+              background-color: #CCC;
+              transition: 0.2s;
+            }
+          }
+        }
+      }
+    }
+    .contact{
+      width: 100%;
+      min-height: 350px;
+      background-color: #454545;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      .contact_left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 20px;
+        width: calc(50% - 40px);
+        .contact_left_title{
+          color: #FFF;
+          font-size: 2vw;
+          font-weight: 600;
+        }
+        .contact_left_input{
+          padding: 20px;
+          border: none;
+          outline: none;
+          width: 320px;
+          height: 30px;
+          font-size: 16pt;
+        }
+        .contact_left_btn{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          width: 320px;
+          height: 30px;
+          font-size: 16pt;
+          background-color: #5698ff;
+          color: #FFF;
+          margin-top: 10px;
+        }
+        .contact_left_adress{
+          color: #FFF;
+          font-size: 1.5vw;
+          font-weight: 400;
+          margin-top: 30px;
+        }
+      }
+      .contact_right{
+        border-left: 1px solid #F1F1F1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: calc(50% - 41px);
+        color: #FFF;
+        .contact_right_title{
+          font-size: 4vw;
+          color: #FFF;
+        }
+        .contact_right_mail{
+          font-size: 2vw;
+          color: #FFF;
+        }
+        .contact_right_btns{
+          font-size: 2vw;
+          color: #FFF;
+          margin-top: 20px;
+          i{
+            margin-right: 2vw;
+            font-size: 4vw;
+            color: #FFF;
+            cursor: pointer;
+            transition: 0.2s;
+          }
+          i:hover{
+            color: #5698ff;
+            transition: 0.2s;
+          }
+        }
+      }
+
+    }
+
+
+  }
+}
+.experience_historymob{
+  display: none;
+  justify-content: center;
+  width: 100%;
+  .experience_history__block{
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    max-width: 350px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+    .experience_history__block_title{
+      font-size: 2vw;
+      font-weight: 600;
+    }
+    .experience_history__block_description{
+      font-size: 1.5vw;
+      font-weight: 400;
+    }
+    .experience_history__block_year{
+      font-size: 1.5vw;
+      font-weight: 400;
+    }
+    .experience_history__block_slash{
+      position: absolute;
+      top: 20px;
+      right: 0px;
+      margin-right: -40px;
+      width: 40px;
+      height: 10px;
+      background-color: #CCC;
+    }
+  }
+  .experience_history__block.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .box.visible {
+    opacity: 1; /* Показываем элемент */
+    transform: translateY(0); /* Возвращаем на место */
+  }
+
+
+  .experience_history_left{
+    margin-top: 150px;
+  }
+  .experience_history_right{
+    margin-top: 150px;
+  }
+  .experience_history_center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .experience_history_center_now_sphere{
+      width: 50px;
+      height: 50px;
+      min-height: 50px;
+      border-radius: 50px;
+      border: 20px solid #CCC;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      .experience_history_center_now_sphere_coma{
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #CCC;
+      }
+      .experience_history_center_now_sphere_now{
+        position: absolute;
+        top:0px;
+        right: 0px;
+        margin-right: -220px;
+        font-size: 3vw;
+        font-weight: 600;
+        color: #CCC;
+      }
+    }
+    .experience_history_center_line{
+      width: 20px;
+      height: 100%;
+      min-height: 300px;
+      background-color: #CCC;
+      margin-top: -5px;
+      margin-bottom: 10px;
+      border-radius: 0 0 10px 10px;
     }
 
   }
 
+}
+@media screen and (min-width: 250px) and (max-width: 800px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 
+    width: 100%;
+    .header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      width: calc(100% - 40px);
+      margin-bottom: 50px;
+
+      .header_logo{
+        font-weight: 800;
+        font-size: 1.6em;
+      }
+      .header_menu{
+        display: none;
+        align-items: center;
+        height: 100%;
+        .header_menu_btn{
+          margin-right: 10px;
+          padding: 10px;
+          font-weight: 500;
+          transition: 0.2s;
+          height: 20px;
+        }
+        .header_menu_btn:hover{
+          color: #CCC;
+          border-bottom: 3px solid #CCC;
+          transition: 0.2s;
+          padding-bottom: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+    .mainup{
+      max-width: 80%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 100px;
+      .mainup_stack{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: calc(100%);
+        //margin-right: 10px;
+        i{
+          font-size: 64pt;
+          margin: 15px;
+          cursor: pointer;
+        }
+      }
+      .mainup_vizitka{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: calc(100%);
+        //margin-right: 10px;
+        .mainup_vizitka_left{
+          width: calc(100%);
+          text-align: center;
+          .mainup_vizitka_left_title{
+            font-size: 2.3rem;
+            font-weight: 800;
+
+          }
+          .mainup_vizitka_left_name{
+            font-size: 1.3rem;
+            font-weight: 600;
+          }
+          .mainup_vizitka_left_hello{}
+        }
+
+        .mainup_vizitka_right{
+          width: 100%;
+          min-width: 200px;
+          height: 300px;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .mainup_vizitka_right_photo{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;clip-path: polygon(
+                          0% 10%,
+                          0% 100%,
+                          100% 110%,
+                          100% 0%
+          );
+          }
+          .mainup_vizitka_right_mask{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 90%;
+            height: 100%;
+            border: 3px solid #454545;
+            background-image: url('https://srsuportal.ru/files/profile/1713927464470_3985.jpeg'); /* Замените на путь к вашей фотографии */background-size: cover;
+            border-radius: 30% 40% 50% 70%;
+            animation: example 22s linear infinite;
+
+          }
+
+
+        }
+        @keyframes example {
+          0% {
+            border-radius: 30% 40% 50% 70%;
+          }
+          10% {
+            border-radius: 60% 50% 60% 40%;
+          }
+          20% {
+            border-radius: 50% 60% 70% 55%;
+          }
+          30% {
+            border-radius: 40% 50% 60% -70%;
+          }
+          40% {
+            border-radius: 70% 50% 80% 50%;
+          }
+          50% {
+            border-radius: 60% 70% 60% 50%;
+          }
+          60% {
+            border-radius: 50% 60% 70% 30%;
+          }
+          70% {
+            border-radius: 40% 50% 60% 70%;
+          }
+          80% {
+            border-radius: 60% 50% 40% 30%;
+          }
+          90% {
+            border-radius: 90% 50% 30% 40%;
+          }
+          100% {
+            border-radius: 30% 40% 50% 70%;
+          }
+        }
+      }
+    }
+
+    .reversesblocks{
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 100px;
+      perspective: 1000px; /* Добавляет перспективу для 3D-эффекта */
+
+      div{
+        width: calc(100% /1 - 50px);
+        height: 300px;
+        background-color: #D9D9D9;
+        color: #737373;
+        display: flex;
+        padding: 20px;
+        font-size: 30pt;
+        margin: 10px;
+        cursor: pointer;
+      }
+
+      .revers_btn_age{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 3vw;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+        }
+
+        .card_back {
+          width: calc(100% - 40px);
+          background: linear-gradient(45deg, #063155, #00AAFF);
+          color: #FFF;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+          display: flex;
+          flex-direction: column;
+          div{
+            background-color: rgba(0,0,0,0);
+          }
+          .card_back_up{
+            font-weight: 600;
+            font-size: 20pt;
+            line-height: 1;
+            color: #FFF;
+          }
+          .card_back_center{
+            display: none;
+          }
+          .card_back_bottom{
+            font-weight: 800;
+            font-size: 30pt;
+            line-height: 1;
+            color: #FFF;
+          }
+        }
+      }
+      .revers_btn_level{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 30pt;
+        line-height: 0.9;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        word-break: break-word;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+        }
+
+        .card_back {
+          width: calc(100% - 40px);
+          background: linear-gradient(45deg, #55064A, #F652FF);
+          color: #FFF;
+          font-size: 30pt;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+        }
+      }
+      .revers_btn_position{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        font-size: 30pt;
+        line-height: 0.9;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+        }
+
+        .card_back {
+          width: calc(100% - 40px);
+          background: linear-gradient(45deg, #065506, #59FF00);
+          color: #FFF;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+          display: flex;
+          flex-direction: column;
+          div{
+            background-color: rgba(0,0,0,0);
+          }
+          .card_back_up{
+            font-weight: 800;
+            font-size: 30pt;
+            line-height: 1;
+            color: #FFF;
+          }
+          .card_back_center{
+            display: none;
+          }
+          .card_back_bottom{
+            font-weight: 600;
+            font-size: 20pt;
+            line-height: 1;
+            color: #FFF;
+          }
+        }
+      }
+      .revers_btn_contact{
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        line-height: 0.9;
+        position: relative;
+        transform-style: preserve-3d; /* Сохраняет 3D-преобразования детей */
+        transition: transform 0.8s;
+        .card_front, .card_back {
+          position: absolute;
+          backface-visibility: hidden; /* Скрывает заднюю сторону при повороте */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .card_front {
+
+          //font-size: 3vw;
+        }
+
+        .card_back {
+          width: calc(100% - 40px);
+          background: linear-gradient(45deg, #C01600, #FFB89A);
+          color: #FFF;
+          transform: rotateY(180deg); /* Поворачивает заднюю сторону на 180 градусов */
+          display: flex;
+          flex-direction: column;
+          div{
+            background-color: rgba(0,0,0,0);
+          }
+          .card_back_up{}
+          .card_back_center{
+            width: calc(100% - 40px);
+            height: 1px;
+            background-color: #FFF;
+          }
+          .card_back_bottom{
+            font-weight: 600;
+            font-size: 20pt;
+            line-height: 1;
+            color: #FFF;
+          }
+        }
+      }
+      .revers_btn_age:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+      .revers_btn_level:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+      .revers_btn_position:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+      .revers_btn_contact:hover {
+        transform: rotateY(180deg); /* Поворачивает карточку при наведении */
+      }
+    }
+
+    .experience{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      margin-bottom: 100px;
+      .experience_run{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //font-size: 30pt;
+        width: 100%;
+        margin-top: 10px;
+        i{
+          font-size: 5vw;
+          color: #CCC;
+        }
+      }
+      .experience_title{
+        font-size: 30pt;
+        margin-bottom: -50px;
+
+      }
+      .experience_history{
+        display: none;
+        justify-content: center;
+        width: 100%;
+        .experience_history__block{
+          display: flex;
+          flex-direction: column;
+          min-height: 250px;
+          max-width: 350px;
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+          .experience_history__block_title{
+            font-size: 2vw;
+            font-weight: 600;
+          }
+          .experience_history__block_description{
+            font-size: 1.5vw;
+            font-weight: 400;
+          }
+          .experience_history__block_year{
+            font-size: 1.5vw;
+            font-weight: 400;
+          }
+          .experience_history__block_slash{
+            position: absolute;
+            top: 20px;
+            right: 0px;
+            margin-right: -40px;
+            width: 40px;
+            height: 10px;
+            background-color: #CCC;
+          }
+        }
+        .experience_history__block.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .box.visible {
+          opacity: 1; /* Показываем элемент */
+          transform: translateY(0); /* Возвращаем на место */
+        }
+
+
+        .experience_history_left{
+          margin-top: 150px;
+        }
+        .experience_history_right{
+          margin-top: 150px;
+        }
+        .experience_history_center{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .experience_history_center_now_sphere{
+            width: 50px;
+            height: 50px;
+            min-height: 50px;
+            border-radius: 50px;
+            border: 20px solid #CCC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .experience_history_center_now_sphere_coma{
+              width: 30px;
+              height: 30px;
+              border-radius: 30px;
+              background-color: #CCC;
+            }
+            .experience_history_center_now_sphere_now{
+              position: absolute;
+              top:0px;
+              right: 0px;
+              margin-right: -220px;
+              font-size: 3vw;
+              font-weight: 600;
+              color: #CCC;
+            }
+          }
+          .experience_history_center_line{
+            width: 20px;
+            height: 100%;
+            min-height: 300px;
+            background-color: #CCC;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            border-radius: 0 0 10px 10px;
+          }
+
+        }
+
+      }
+      .experience_historymob{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .experience_history__block{
+          display: flex;
+          flex-direction: column;
+          min-height: 150px;
+          max-width: 350px;
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+          .experience_history__block_title{
+            font-size: 20pt;
+            font-weight: 600;
+          }
+          .experience_history__block_description{
+            font-size: 16pt;
+            font-weight: 400;
+          }
+          .experience_history__block_year{
+            font-size: 16pt;
+            font-weight: 400;
+          }
+          .experience_history__block_slash{
+            position: absolute;
+            top: 20px;
+            right: 0px;
+            margin-right: -20px;
+            width: 40px;
+            height: 10px;
+            background-color: #CCC;
+          }
+        }
+        .experience_history__block.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .box.visible {
+          opacity: 1; /* Показываем элемент */
+          transform: translateY(0); /* Возвращаем на место */
+        }
+
+
+        .experience_history_left{
+          margin-top: 150px;
+        }
+        .experience_history_right{
+          margin-top: 150px;
+        }
+        .experience_history_center{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .experience_history_center_now_sphere{
+            width: 50px;
+            height: 50px;
+            min-height: 50px;
+            border-radius: 50px;
+            border: 20px solid #CCC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .experience_history_center_now_sphere_coma{
+              width: 30px;
+              height: 30px;
+              border-radius: 30px;
+              background-color: #CCC;
+            }
+            .experience_history_center_now_sphere_now{
+              position: absolute;
+              top:0px;
+              right: 0px;
+              margin-right: -220px;
+              font-size: 3vw;
+              font-weight: 600;
+              color: #CCC;
+            }
+          }
+          .experience_history_center_line{
+            width: 20px;
+            height: 100%;
+            min-height: 300px;
+            background-color: #CCC;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            border-radius: 0 0 10px 10px;
+          }
+
+        }
+
+      }
+    }
+
+    .portfolio{}
+    .aboutme{}
+    .grabform{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .grabform_line{
+        width: 80%;
+        height: 1px;
+        background-color: #CCC;
+      }
+      .grabform_title{
+        margin-top: 50px;
+        font-size: 18pt;
+        font-weight: 800;
+      }
+      .grabform_description{
+        margin-top: 20px;
+        font-size: 14pt;
+        font-weight: 600;
+        color: #CCC;
+        margin-bottom: 30px;
+        width: 80%;
+        text-align: center;
+        .small{
+          font-size: 12pt;
+          color: #454545;
+        }
+      }
+      .grabform_goods{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 80%;
+        .grabform_goods_block{
+          margin: 20px 0;
+          border: 1px solid #CCC;
+          width: calc(100% / 1  - 2px);
+          height: 550px;
+
+          .grabform_goods_block_img{
+            height: 400px;
+            width: 100%;
+            position: relative;
+            background-size: cover;
+            background-position: center center;
+            .grabform_goods_block_open{
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          .grabform_goods_block_name{
+            padding: 10px 20px 0px 20px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+          .grabform_goods_block_price{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px 10px 20px;
+            margin-top: 20px;
+            .grabform_goods_block_price_cost{
+              font-size: 16px;
+            }
+            .grabform_goods_block_price_curt{
+              padding: 20px 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 1px solid #CCC;
+              transition: 0.2s;
+              cursor: pointer;
+            }
+            .grabform_goods_block_price_curt:hover{
+              background-color: #CCC;
+              transition: 0.2s;
+            }
+          }
+        }
+      }
+    }
+    .contact{
+      width: 100%;
+      min-height: 350px;
+      background-color: #454545;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      //flex-wrap: wrap;
+      padding: 20px 0;
+      .contact_left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 20px;
+        width: calc(100% - 40px);
+        min-width: 280px;
+        .contact_left_title{
+          color: #FFF;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        .contact_left_input{
+          padding: 20px;
+          border: none;
+          outline: none;
+          width: 290px;
+          height: 30px;
+          font-size: 16pt;
+        }
+        .contact_left_btn{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          width: 290px;
+          height: 30px;
+          font-size: 16pt;
+          background-color: #5698ff;
+          color: #FFF;
+          margin-top: 10px;
+        }
+        .contact_left_adress{
+          color: #FFF;
+          font-size: 12px;
+          font-weight: 400;
+          margin-top: 30px;
+        }
+      }
+      .contact_right{
+        border-left: 1px solid #F1F1F1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: calc(100% - 41px);
+        color: #FFF;
+        min-width: 280px;
+        .contact_right_title{
+          font-size: 18px;
+          color: #FFF;
+        }
+        .contact_right_mail{
+          font-size: 12px;
+          color: #FFF;
+        }
+        .contact_right_btns{
+          font-size: 2vw;
+          color: #FFF;
+          margin-top: 20px;
+          i{
+            margin-right: 2vw;
+            font-size: 40px;
+            color: #FFF;
+            cursor: pointer;
+            transition: 0.2s;
+          }
+          i:hover{
+            color: #5698ff;
+            transition: 0.2s;
+          }
+        }
+      }
+
+    }
+
+
+  }
 }
